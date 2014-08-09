@@ -43,9 +43,9 @@ Sel.Time$Date <- strptime(Sel.Time$Date, "%Y-%m-%d %H:%M:%S")
 
 ##save plots to working directory
 png(filename="plot4.png",width=480,height=480,units="px")
+##set up print area to have 4 section and margins so all information is included
 par(mfcol=c(2,2))
 par(mar=c(9.5,5,2,1))
-##set up margins so all information is included
 ## Plot Global Active Power
 with(Sel.Time,plot(Date,Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab=""))
 ##Plot Sub Metering
