@@ -1,6 +1,5 @@
 
 
-setwd("~/Desktop/Data Specialisation/ExploreData") 
 log<-read.table("household_power_consumption.txt",sep=";",header=T)
 ##Change the Date and Time column to date and time variables
 log$Date<-as.character(log$Date)
@@ -19,7 +18,7 @@ write.table(Sel.Time,"subset_household_power.txt")
 png(filename="plot1.png",width=480,height=480,units="px")
 ##set up margins so all information is included
 par(mar=c(9,5,4.2,2.1))
-hist(Sel.Time$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (Kilowatts")
+hist(Sel.Time$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (Kilowatts)")
 dev.off()
 
 
