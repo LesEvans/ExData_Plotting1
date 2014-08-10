@@ -47,7 +47,7 @@ png(filename="plot4.png",width=480,height=480,units="px")
 par(mfcol=c(2,2))
 par(mar=c(9.5,5,2,1))
 ## Plot Global Active Power
-with(Sel.Time,plot(Date,Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab=""))
+with(Sel.Time,plot(Date,Global_active_power,type="l",ylab="Global Active Power",xlab=""))
 ##Plot Sub Metering
 with(Sel.Time,plot(Date,Sub_metering_1,type="l",ylab="Energy sub metering",xlab=""))
 with(Sel.Time,lines(Date,Sub_metering_2,col="red"))
